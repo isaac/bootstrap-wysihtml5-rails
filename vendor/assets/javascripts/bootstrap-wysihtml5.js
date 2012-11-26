@@ -21,6 +21,12 @@
                                  "<a class='btn' data-wysihtml5-command='underline' title='CTRL+U'>" + locale.emphasis.underline + "</a>" +
                              "</div>" +
                          "</li>",
+          "italic-underline": "<li>" +
+                             "<div class='btn-group'>" +
+                                 "<a class='btn' data-wysihtml5-command='italic' title='CTRL+I'>" + locale.emphasis.italic + "</a>" +
+                                 "<a class='btn' data-wysihtml5-command='underline' title='CTRL+U'>" + locale.emphasis.underline + "</a>" +
+                             "</div>" +
+                         "</li>",
           "lists":       "<li>" +
                              "<div class='btn-group'>" +
                                  "<a class='btn' data-wysihtml5-command='insertUnorderedList' title='" + locale.lists.unordered + "'><i class='icon-list'></i></a>" +
