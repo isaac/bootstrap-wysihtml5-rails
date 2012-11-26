@@ -80,12 +80,13 @@
   
   var defaultOptions = {
     locale: "en",
-    "font-styles": true,
-    "emphasis": true,
-    "lists": true,
+    "font-styles": false,
+    "emphasis": false,
+    "italic-underline": false,
+    "lists": false,
     "html": false,
-    "link": true,
-    "image": true,
+    "link": false,
+    "image": false,
     events: {},
     parserRules: {
       tags: {
@@ -313,6 +314,10 @@
               italic: "Italic",
               underline: "Underline"
           },
+          italic_underline: {
+              italic: "Italic",
+              underline: "Underline"
+          },
           lists: {
               unordered: "Unordered list",
               ordered: "Ordered list",
@@ -342,6 +347,10 @@
               italic: "Italique",
               underline: "Souligné"
           },
+          italic_underline: {
+              italic: "Italique",
+              underline: "Souligné"
+          },
           lists: {
               unordered: "Unordered list",
               ordered: "Ordered list",
@@ -368,6 +377,10 @@
           },
           emphasis: {
               bold: "Fett",
+              italic: "Kursiv",
+              underline: "Unterstrichen"
+          },
+          italic_underline: {
               italic: "Kursiv",
               underline: "Unterstrichen"
           },
