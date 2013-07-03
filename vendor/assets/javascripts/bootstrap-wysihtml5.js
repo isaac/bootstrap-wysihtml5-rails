@@ -93,27 +93,23 @@
     "html": false,
     "link": false,
     "image": false,
+    useLineBreaks: false,
+    stylesheets: "wysihtml5",
     events: {},
     parserRules: {
       tags: {
-        "b":  {},
-        "i":  {},
-        "br": {},
-        "ol": {},
-        "ul": {},
-        "li": {},
-        "h1": {},
-        "h2": {},
-        "u": 1,
-        "img": {
-          "check_attributes": {
-                  "width": "numbers",
-                  "alt": "alt",
-                  "src": "url",
-                  "height": "numbers"
-              }
-        },
-        "a":  {
+        strong: {},
+        b:      {},
+        i:      {},
+        em:     {},
+        br:     {},
+        p:      {},
+        div:    {},
+        span:   {},
+        ul:     {},
+        ol:     {},
+        li:     {},
+        a:      {
           set_attributes: {
             target: "_blank",
             rel:    "nofollow"
@@ -154,7 +150,9 @@
         
       var editor = new wysi.Editor(this.el[0], {
           toolbar: this.toolbar.attr('id'),
-        parserRules: parserRules
+          parserRules: parserRules,
+          useLineBreaks: false,
+          stylesheets: "wysihtml5"
         });
 
         if(options && options.events) {
