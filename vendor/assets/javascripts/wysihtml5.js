@@ -8232,6 +8232,11 @@ wysihtml5.views.View = Base.extend(
       dom.observe(this.doc, "keydown", function(event) {
         var keyCode = event.keyCode;
         
+        if (event.shiftKey && keyCode === wysihtml5.ENTER_KEY) {
+          that.commands.exec("insertLineBreak");
+          event.preventDefault();
+        }
+        
         if (event.shiftKey) {
           return;
         }
