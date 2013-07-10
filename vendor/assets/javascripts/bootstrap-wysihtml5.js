@@ -99,7 +99,6 @@
     parserRules: {
       tags: {
         strong: {},
-        b:      {},
         i:      {},
         em:     {},
         br:     {},
@@ -151,8 +150,7 @@
       var editor = new wysi.Editor(this.el[0], {
           toolbar: this.toolbar.attr('id'),
           parserRules: parserRules,
-          useLineBreaks: false,
-          stylesheets: "wysihtml5"
+          useLineBreaks: false
         });
 
         if(options && options.events) {
